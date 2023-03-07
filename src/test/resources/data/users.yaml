@@ -1,0 +1,13 @@
+---
+- user: adminUser
+  credentials:
+    username: admin
+    password: admin
+- user: supportUser
+  credentials:
+    username: supportAdmin
+    password: support
+- user: publicUser
+  credentials:
+    username: user
+    password: user

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Automation Suite" parallel="tests">
+  <listeners>
+    <listener class-name="utils.listeners.TestListeners"/>
+  </listeners>
+  <test thread-count="1" name="Register" parallel="tests">
+    <groups>
+      <run>
+        <include name="P1"/>
+        <include name="P2"/>
+        <include name="P3"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.register.RegisterTest"/>
+    </classes>
+  </test> <!-- Register -->
+  <test thread-count="1" name="Login" parallel="tests">
+    <groups>
+      <run>
+        <include name="P1"/>
+        <include name="P2"/>
+        <include name="P3"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.login.LoginTest"/>
+    </classes>
+  </test> <!-- Login -->
+  <test thread-count="1" name="Find Flight" parallel="tests">
+    <groups>
+      <run>
+        <include name="P1"/>
+        <include name="P2"/>
+        <include name="P3"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.flight.FlightTest"/>
+    </classes>
+  </test> <!-- Find Flight -->
+</suite> <!-- Automation Suite -->
