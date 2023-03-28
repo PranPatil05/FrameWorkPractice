@@ -91,6 +91,7 @@ public class RegisterTest extends TestBase{
         expectedCountries.add("UNITED STATES");
         expectedCountries.add("GERMANY");
         expectedCountries.add("ARCTIC");
+        
 
         registerPage.openCountryDropdown();
         List<String> actualCountries = registerPage.getListOfCountries();
