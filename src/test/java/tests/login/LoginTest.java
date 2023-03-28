@@ -73,7 +73,6 @@ public class LoginTest extends TestBase {
         loginHelper.doLogin(userPojo.getCredentials().getUsername(),userPojo.getCredentials().getPassword());
 
         genericHelper.hardWait(3);
-
         softAssert.assertTrue(genericHelper.getURL().contains("login_sucess"),"URL Does not contain 'login_sucess'");
         softAssert.assertTrue(genericHelper.isDisplayed(loginPage.loginSuccessMessage),"'Login Success' Message not displayed");
         softAssert.assertAll();
